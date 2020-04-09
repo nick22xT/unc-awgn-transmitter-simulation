@@ -69,8 +69,8 @@ imprimir_histograma("Histograma: Mensajes Decodificados con ML", mensaje_decodif
 # Deteccion de errores
 varianzas = np.arange(0.1, 1, 0.1)
 
-error_estimado_map = statistic_map_error(mu, varianzas, mensaje_modulado, c, p, muestras)
-error_estimado_ml = statistic_ml_error(mu, varianzas, mensaje_modulado, c, muestras)
+error_estimado_map = statistical_map_error(mu, varianzas, mensaje_modulado, c, p, muestras)
+error_estimado_ml = statistical_ml_error(mu, varianzas, mensaje_modulado, c, muestras)
 
 # Error Teorico
 error_analitico_map = analytic_error(varianzas, c, p[0], p[1])

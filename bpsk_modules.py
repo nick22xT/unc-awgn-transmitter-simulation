@@ -24,7 +24,7 @@ def ml_detection(y, c, varianza):
     return mensaje_decodificado_ml
 
 
-def statistic_map_error(mu, var, mensaje_transmitido, c, p, muestras):
+def statistical_map_error(mu, var, mensaje_transmitido, c, p, muestras):
     error_estimado = np.zeros(var.size, 'float64')
 
     for i in range(var.size):
@@ -35,7 +35,7 @@ def statistic_map_error(mu, var, mensaje_transmitido, c, p, muestras):
     return error_estimado
 
 
-def statistic_ml_error(mu, var, mensaje_transmitido, c, muestras):
+def statistical_ml_error(mu, var, mensaje_transmitido, c, muestras):
     error_estimado = np.zeros(var.size, 'float64')
 
     for i in range(var.size):
